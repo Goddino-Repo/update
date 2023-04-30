@@ -1,13 +1,13 @@
-sudo apt-get update
-sudo apt-get update --fix-missing
-sudo apt-get upgrade
-sudo apt-get upgrade --fix-missing
-sudo apt-get upgrade --fix-broken
-sudo apt-get dist-upgrade
-sudo apt-get dist-upgrade --fix-missing
-sudo apt-get dist-upgrade --fix-broken
-sudo apt-get autoremove
-sudo apt-get --fix-missing install
-sudo apt-get --fix-broken install
+sudo apt-get update -y
+sudo apt-get update --fix-missing -y
+sudo apt-get upgrade -y
+sudo apt-get upgrade --fix-missing -y
+sudo apt-get upgrade --fix-broken -y
+sudo apt-get dist-upgrade -y
+sudo apt-get dist-upgrade --fix-missing -y
+sudo apt-get dist-upgrade --fix-broken -y
+sudo apt-get autoremove -y
+sudo apt-get --fix-missing install -y
+sudo apt-get --fix-broken install -y
 clear
 echo "aggiornamento completato"
