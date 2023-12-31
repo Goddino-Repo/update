@@ -1,0 +1,29 @@
+#! /bin/bash
+
+: '
+@file        : update.sh
+@author      : Lorenzo Pellegrini <lorenzo.pellegrini@intramind-srl.com>
+@version     : 2.0
+@since       : 2023-12-31
+@description : This script updates all repositories, updates all packages, fixes broken packages, remove unused dependencies and updates the system.
+@instruction : Simply run this script as sudo.
+'
+
+# Updates
+sudo apt update -y
+sudo apt update --fix-missing -y
+sudo apt upgrade -y
+sudo apt upgrade --fix-missing -y
+sudo apt upgrade --fix-broken -y
+sudo apt dist-upgrade -y
+sudo apt dist-upgrade --fix-missing -y
+sudo apt dist-upgrade --fix-broken -y
+sudo apt autoremove -y
+sudo apt --fix-missing install -y
+sudo apt --fix-broken install -y
+
+# Clear the console
+clear
+
+# Display success message
+printf "Update completed\n"
